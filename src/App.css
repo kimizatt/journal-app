@@ -8,8 +8,14 @@
   flex-direction: row;
   justify-content: space-between;
   height: 15vh;
-  background-color: lightsalmon;
+  background-image: linear-gradient(to right, lightsalmon, lightpink);
   align-items: center;
+  box-shadow: 0 0 20px, gray;
+}
+
+.auth-container {
+  width: 300px;
+  margin-left: 5px;  
 }
 
 .auth-buttons {
@@ -24,11 +30,104 @@
 }
 
 .auth-buttons button {
-  margin: 0 5px;
+  
   padding: 0 3px;
-  border-radius: 10%;
+  border-radius: 5px;
 }
 
 .header h1 {
   margin-left: 10px;
+}
+
+.logout-button {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+/* .display-container {
+  width: 100vw;
+  height: 85vh;
+  background-image: linear-gradient(to bottom, pink to black);
+} */
+
+.top-container {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient( to bottom right, white, orange) ;
+
+
+}
+.ball-container {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  float: right;
+}
+
+.ball-container1 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 200px;
+  right: 300px;
+  background-color: orange;
+  border-radius: 50%; 
+}
+
+
+
+.ball-container2 {
+  width: 75px;
+  height: 75px;
+  transform: rotate(.15turn);
+  background-color: purple;
+  float: right;
+  animation-name: slide-left;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+
+}
+@keyframes slide-left {
+  0% {float: right;}
+  50% {float: left;}
+  100% {background-color: pink;}
+
+}
+
+.red-box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(141, 29, 29);
+  position: relative;
+  left: 100px;
+  top: -50px;
+  
+}
+
+.blue-box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(58, 30, 161);
+  position: absolute;
+  top: 400px;
+  right: 300px;
+  color: white;
+  font-size: 14px;
+}
+
+.green-box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(34, 97, 34);
+  position: relative;
+  right: 50px;
+  bottom: 100px;
+  color: white;
+  text-align: right;
+}
+
+.red-box p {
+  color: white;
+  text-align: center;
 }

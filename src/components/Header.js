@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
-import Auth from './Auth'
+import Login from './Login'
+import Signup from './Signup'
+import Logout from './Logout'
+
 
 class Header extends Component {
 
@@ -7,7 +10,11 @@ class Header extends Component {
         return (
             <div className='header'>
                 <h1>Journal</h1>
-                <Auth />
+                <div className='auth-container'></div>
+                <Login />
+                <Signup />
+                <Logout />
+            
             </div>
         )
     }
